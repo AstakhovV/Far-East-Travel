@@ -1,9 +1,9 @@
-
 #product-overview {
+    background:-webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(80,68,18, 0.6)), to(transparent)), url("osero_dzeka_londo.jpg")  left 10% top 20%/cover no-repeat border-box;
+    background:-o-linear-gradient(bottom, rgba(80,68,18, 0.6) 10%, transparent), url("osero_dzeka_londo.jpg")  left 10% top 20%/cover no-repeat border-box;
     background:linear-gradient(to top, rgba(80,68,18, 0.6) 10%, transparent), url("osero_dzeka_londo.jpg")  left 10% top 20%/cover no-repeat border-box;
     height: 50vh;
     width: 100%;
-    margin-top: 1.75rem;
     position: relative;
 }
 
@@ -34,6 +34,7 @@
 
 }
 .plan_annotation{
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     background: white;
     color: #19b84c;
@@ -108,8 +109,14 @@
 .modal {
     position: fixed;
     opacity: 0;
+    -webkit-transform: translateY(-3rem);
+    -ms-transform: translateY(-3rem);
     transform: translateY(-3rem);
+    -webkit-transition: opacity 200ms ease-out,-webkit-transform 500ms ease-out;
+    transition: opacity 200ms ease-out,-webkit-transform 500ms ease-out;
+    -o-transition: opacity 200ms ease-out,transform 500ms ease-out;
     transition: opacity 200ms ease-out,transform 500ms ease-out;
+    transition: opacity 200ms ease-out,transform 500ms ease-out,-webkit-transform 500ms ease-out;
     z-index: 200;
     top: 20%;
     left: 30%;
@@ -117,6 +124,7 @@
     background: white;
     padding: 1rem;
     border: 1px solid #ccc;
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -165,12 +173,22 @@
     }
     .plan{
         margin: 0.5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         width: 30%;
         border-radius: 10px;
+        -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
         min-width: 11rem;
         max-width: 25rem;
@@ -179,8 +197,14 @@
     }
     .plan__list{
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
     .plan_annotation{
@@ -191,7 +215,11 @@
         max-width: 25rem;
     }
     .key-features__list{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 }
