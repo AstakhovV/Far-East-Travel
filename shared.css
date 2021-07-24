@@ -16,8 +16,10 @@ main{
 }
 
 .backdrop{
-    position: fixed;
     display: none;
+    position: fixed;
+    opacity: 0;
+    transition: opacity 0.3s linear;
     top: 0;
     left: 0;
     z-index: 100;
@@ -85,6 +87,10 @@ main{
     padding: 0.2rem 0.3rem;
     border-radius: 8px;
 }
+.main-nav__item--cta{
+    animation: wiggle 400ms 3s 6 ease-out none;
+}
+
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active,
 .mobile-nav__item-cta a:hover,
@@ -92,6 +98,7 @@ main{
     color: red;
     background: white;
     border: none;
+
 }
 
 .main-footer{
@@ -175,6 +182,8 @@ main{
 }
 .open{
     display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0)!important;
 }
 .button{
     background-color: #0e4f1f;
@@ -206,5 +215,16 @@ main{
     .main-footer__link{
         margin: 0 1rem;
     }
+}
 
+@keyframes wiggle {
+    0% {
+        transform: rotateZ(0);
+    }
+    50%{
+        transform: rotateZ(-10deg);
+    }
+    100% {
+        transform: rotateZ(10deg);
+    }
 }
