@@ -141,9 +141,9 @@ main
   .main-header__logo
     margin: 0 1rem
     color: #0e4f1f
-    text-shadow: 4px 2px 10px rgb(72, 78, 72)
+    text-shadow: 4px 2px 10px rgb(81, 82, 81)
     font-weight: bolder
-    font-size: 1rem
+    font-size: 1.1rem
 
 .mobile-nav
   display: none
@@ -231,14 +231,20 @@ main
   padding: 0.5rem
   border-radius: 10px
   font-weight: bold
-  [disabled]
-    cursor: not-allowed
-    border: #a1a1a1
-    background: #cccccc
-    color: #6a6666
   &:hover, &:active
     background-color: white
     color: #0e4f1f
+
+button:disabled,
+button[disabled]
+  cursor: not-allowed
+  border: #a1a1a1
+  background: #cccccc
+  color: #6a6666
+  &:hover, &:active
+    background: #cccccc
+    color: #6a6666
+
 
 .background
   width: 100%
