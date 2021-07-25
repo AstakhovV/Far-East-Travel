@@ -15,7 +15,7 @@
 <div class="backdrop"></div>
 <div class="background"></div>
 <header class="main-header">
-    <div>
+    <div class="main-header__bar-div">
         <button class="toggle-button">
             <span class="toggle-button__bar"></span>
             <span class="toggle-button__bar"></span>
@@ -23,12 +23,14 @@
         </button>
         <a href="../index.html" class="main-header__brand">
             <img src="../favicon.png" alt="FarEast">
+            <p>Home</p>
         </a>
+        <p class="main-header__logo">Far East Travel</p>
     </div>
     <nav class="main-nav">
         <ul class="main-nav__items">
             <li class="main-nav__item">
-                <a href="../index.html">Packages</a>
+                <a href="../packages/index.html">Packages</a>
             </li>
             <li class="main-nav__item">
                 <a href="../clients/index.html">Clients</a>
@@ -53,18 +55,34 @@
     </ul>
 </nav>
 <main>
+    <div class="popupbox">
+        <div class="popupbox_header">
+            Заголовок изображения 1
+            <div class="popupbox_navigation">
+                <a href="#closeimage" title="Закрыть">✖</a>
+            </div>
+        </div>
+        <div class="popupbox_image">
+            <img src="shachta_mir.jpg" alt="shachta_mir">
+        </div>
+    </div>
+
     <section class="package" id="diamond-mine">
         <div class="packages-anchor">
             <h1 class="package__title">Diamond Mine "Mir", Yakutia</h1>
             <h2 class="package__badge">RECOMMENDED</h2>
             <h2 class="package__subtitle">The most popular choice of our clients.</h2>
-            <p class="package__info">The man-made diamond quarry was called "Mir" for a reason: having discovered the
-                source, geologists sent to Moscow a coded radiogram: "We lit a pipe of peace, excellent tobacco." Why a
-                pipe? It's simple: this is what geologists call such deposits. Nowadays, the mine is no longer
-                operating, and tourists have a chance to look at a colossal quarry - one and a half kilometers in
-                diameter! The Yakuts believe that diamond deposits in their lands are associated with intervention from
+            <p class="package__info">The man-made diamond quarry was called "Mir", Nowadays, the mine is no longer
+                operating, and tourists have a chance to look at a colossal quarry - one
+                and a half kilometers in diameter! The Yakuts believe that diamond deposits in their lands are
+                associated with intervention from
                 above: once it was so cold that a deity hovering in the sky froze his hand and dropped a whole bag of
                 diamonds on the ground.</p>
+        </div>
+        <div class="package-image">
+            <a class="popupbox_preview">
+                <img src="shachta_mir.jpg" alt="shachta_mir">
+            </a>
         </div>
     </section>
     <section class="package" id="volcano-krenitsyn">
@@ -72,21 +90,31 @@
             <h1 class="package__title">Krenitsyn volcano, Kuril Islands</h1>
             <h2 class="package__subtitle">A quick start in exploring the nature of the Far East.</h2>
             <p class="package__info">Located on the Onekotan Island, the active volcano Krenitsyn is a truly unique
-                phenomenon. This is not just a volcano, but a volcano within a volcano, and even the largest in the
-                world. Around its top, overgrown with forests, a ring of lake closes, enclosed in flowering slopes -
+                phenomenon. This is not just a volcano, but a volcano within a volcano. Around its top, overgrown with
+                forests, a ring of lake closes, enclosed in flowering slopes -
                 calderas. The mesmerizing landscape is complemented by the haze enveloping the lake - neither give nor
                 take the scenery for "Jurassic Park"!</p>
         </div>
+        <div class="package-image">
+            <a class="popupbox_preview">
+                <img src="vulkan_krenizyna.jpg" alt="vulkan_krenizyna">
+            </a>
+        </div>
     </section>
-    <div class="clear-fix"></div>
     <section class="package" id="lake-jack">
         <div class="packages-anchor">
             <h1 class="package__title">Lake Jack London, Magadan</h1>
+            <h2 class="package__badge-night">STAR NIGHT</h2>
             <h2 class="package__subtitle">Ideal for large groups of people.</h2>
             <p class="package__info">A huge ten-kilometer reservoir with four picturesque islets owes its name to an
                 unusual find: an expedition that discovered the lake found on its shore a book by the famous writer Jack
                 London. How the book got here and who the mysterious intellectual turned out to be in this deserted area
                 of the Magadan region is unknown to this day.</p>
+        </div>
+        <div class="package-image">
+            <a class="popupbox_preview">
+                <img src="osero_dzeka_londo.jpg" alt="osero_dzeka_londo">
+            </a>
         </div>
     </section>
     <section class="package" id="glass-bay">
@@ -99,6 +127,11 @@
                 everywhere. Glass Bay is a unique phenomenon; you will not find a similar place in our country
                 anymore.</p>
         </div>
+        <div class="package-image">
+            <a class="popupbox_preview">
+                <img src="steklyanny_playzh.jpg" alt="steklyanny_playzh">
+            </a>
+        </div>
     </section>
     <section class="package" id="oymyakon">
         <div class="packages-anchor">
@@ -106,11 +139,15 @@
             <h2 class="package__badge-winter">WINTER SEASON</h2>
             <h2 class="package__subtitle">For the most persistent people.</h2>
             <p class="package__info">Oymyakon is a place where winter lasts almost 9 months, eyelashes become covered
-                with frost in a couple of minutes in the cold, and reindeer racing is not an exotic entertainment, but a
-                common thing. The translation of the name of this picturesque corner of Yakutia, at first glance, is
+                with frost in a couple of minutes in the cold. The translation of the name of this picturesque corner of Yakutia, at first glance, is
                 completely illogical: "non-freezing water", but ironically, precisely because of the abnormally low
                 temperatures, the soil and underground rivers freeze so much that their volume pushes the non-frozen
                 water out. No wonder Oymyakon bears the proud status of the coldest city in Russia!</p>
+        </div>
+        <div class="package-image">
+            <a class="popupbox_preview">
+                <img src="Oymyakon.jpg" alt="oymyakon">
+            </a>
         </div>
     </section>
     <section class="package" id="kutkhiny-bati">
@@ -122,6 +159,11 @@
                 down so that he could go fishing at any time. This is how the Kutkhins Baty appeared - in translation
                 "boats Kutkha" - picturesque slopes, the views of which are now admired by tourists. Locals make Kutkh
                 figurines from wood and bone: they are purchased not only as souvenirs, but also as talismans.</p>
+        </div>
+        <div class="package-image">
+            <a class="popupbox_preview">
+                <img src="kuthiny-baty.jpg" alt="kuthiny-baty">
+            </a>
         </div>
     </section>
 </main>
